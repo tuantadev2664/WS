@@ -192,6 +192,122 @@ namespace MiniBattleship.Services
             return candidates[rng.Next(candidates.Count)];
         }
 
+        // Enhanced bot AI with hunting strategy and proximity targeting
+        public static (int r, int c) BotPickShotAI(Board botOppView, BotAIState botAI, Random rng)
+        {
+            // Priority 1: If bot is hunting, continue hunting
+            if (botAI.IsHunting)
+            {
+                var huntTarget = botAI.GetNextHuntTarget();
+                if (huntTarget.HasValue)
+                {
+                    var (row, col) = huntTarget.Value;
+                    // Check if target is valid (not already shot)
+                    if (botOppView.Grid[row][col] != Cell.Hit && botOppView.Grid[row][col] != Cell.Miss)
+                    {
+                        return (row, col);
+                    }
+                }
+                
+                // If no valid hunt targets, stop hunting
+                botAI.IsHunting = false;
+            }
+            
+            // Priority 2: Proximity targeting - shoot near recent hits
+            if (botAI.RecentHits.Count > 0)
+            {
+                var proximityTargets = botAI.GetProximityTargetsWithPriority();
+                
+                foreach (var (row, col, priority) in proximityTargets)
+                {
+                    // Check if target is valid (not already shot)
+                    if (botOppView.Grid[row][col] != Cell.Hit && botOppView.Grid[row][col] != Cell.Miss)
+                    {
+                        return (row, col);
+                    }
+                }
+            }
+            
+            // Priority 3: If not hunting and no proximity targets, use parity targeting
+            if (botAI.IsParityMode)
+            {
+                // Generate parity targets if not already done
+                if (botAI.ParityTargets.Count == 0)
+                {
+                    botAI.GenerateParityTargets();
+                }
+                
+                // Try parity targets
+                var parityTarget = botAI.GetNextParityTarget();
+                if (parityTarget.HasValue)
+                {
+                    var (row, col) = parityTarget.Value;
+                    // Check if target is valid
+                    if (botOppView.Grid[row][col] != Cell.Hit && botOppView.Grid[row][col] != Cell.Miss)
+                    {
+                        return (row, col);
+                    }
+                }
+                
+                // If no valid parity targets, switch to random
+                botAI.IsParityMode = false;
+            }
+            
+            // Priority 4: Fallback to random targeting
+            return BotPickShot(botOppView, rng);
+        }
+
+        // Update bot AI state after a shot
+        public static void UpdateBotAI(BotAIState botAI, Board botOppView, int row, int col, bool hit)
+        {
+            if (hit)
+            {
+                // Add to recent hits for proximity targeting
+                botAI.AddRecentHit(row, col);
+                
+                if (!botAI.IsHunting)
+                {
+                    // Start hunting mode
+                    botAI.StartHunting(row, col);
+                }
+                else
+                {
+                    // Continue hunting - determine direction if unknown
+                    if (botAI.HuntDirection == "unknown")
+                    {
+                        // Check if this hit is adjacent to the first hit
+                        if (Math.Abs(row - botAI.HuntStartRow) == 1 && col == botAI.HuntStartCol)
+                        {
+                            botAI.ContinueHunting("vertical");
+                        }
+                        else if (Math.Abs(col - botAI.HuntStartCol) == 1 && row == botAI.HuntStartRow)
+                        {
+                            botAI.ContinueHunting("horizontal");
+                        }
+                    }
+                }
+            }
+            else
+            {
+                // If hunting and missed, try other direction or stop hunting
+                if (botAI.IsHunting && botAI.HuntDirection == "unknown")
+                {
+                    // Try the other direction
+                    if (botAI.HuntIndex >= botAI.HuntTargets.Count)
+                    {
+                        // No more targets in current direction, try other direction
+                        botAI.HuntDirection = "horizontal"; // Try horizontal if was trying vertical
+                        botAI.ContinueHunting("horizontal");
+                    }
+                }
+                else if (botAI.IsHunting && botAI.HuntIndex >= botAI.HuntTargets.Count)
+                {
+                    // No more targets, stop hunting
+                    botAI.IsHunting = false;
+                }
+            }
+        }
+
         // Method to validate that no ships are overlapping
         public static bool ValidateShipPlacement(Board board)
         {

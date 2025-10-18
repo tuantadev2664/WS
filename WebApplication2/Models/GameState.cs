@@ -10,6 +10,9 @@
         public int ShotsTakenB { get; set; }
         public bool IsGameOver { get; set; }
         public string Winner { get; set; } = string.Empty;
+        
+        // Bot AI state for intelligent hunting
+        public BotAIState BotAI { get; set; } = new();
 
 
         private static Board PlayerStateDefault() => Board.CreateEmpty();

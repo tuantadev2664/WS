@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Proximity AI - Mini Battleship</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .ai-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .priority-demo {
+            display: grid;
+            grid-template-columns: repeat(10, 30px);
+            gap: 2px;
+            margin: 20px 0;
+            justify-content: center;
+        }
+        .priority-cell {
+            width: 30px;
+            height: 30px;
+            border: 1px solid #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .hit-cell {
+            background: #ff6b6b;
+            color: white;
+        }
+        .high-priority {
+            background: #4ecdc4;
+            color: white;
+        }
+        .medium-priority {
+            background: #45b7d1;
+            color: white;
+        }
+        .low-priority {
+            background: #96ceb4;
+            color: white;
+        }
+        .empty-cell {
+            background: #f8f9fa;
+            color: #666;
+        }
+        .legend {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0;
+            justify-content: center;
+        }
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .legend-color {
+            width: 20px;
+            height: 20px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🎯 Test Proximity AI Targeting</h1>
+        
+        <div class="ai-info">
+            <h3>🧠 Proximity AI Features:</h3>
+            <ul>
+                <li><strong>🎯 Priority 1:</strong> Hunting Mode - Bắn theo hướng đã phát hiện</li>
+                <li><strong>📍 Priority 2:</strong> Proximity Targeting - Bắn gần các ô vừa trúng</li>
+                <li><strong>🔢 Priority 3:</strong> Parity Targeting - Pattern checkerboard</li>
+                <li><strong>🎲 Priority 4:</strong> Random Fallback - Bắn ngẫu nhiên</li>
+            </ul>
+        </div>
+        
+        <div class="game-actions">
+            <button class="btn btn-primary" onclick="startNewGame()">
+                🎮 Start New Game
+            </button>
+            <button class="btn btn-secondary" onclick="simulateBotTurn()">
+                🤖 Simulate Bot Turn
+            </button>
+            <button class="btn btn-info" onclick="showProximityDemo()">
+                📊 Show Proximity Demo
+            </button>
+        </div>
+        
+        <div id="proximityDemo" class="ai-info" style="display: none;">
+            <h3>🎯 Proximity Targeting Demo:</h3>
+            <p>Giả sử bot vừa bắn trúng tại ô (4,4) và (4,5):</p>
+            
+            <div class="priority-demo" id="priorityGrid"></div>
+            
+            <div class="legend">
+                <div class="legend-item">
+                    <div class="legend-color hit-cell"></div>
+                    <span>Recent Hits</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color high-priority"></div>
+                    <span>High Priority (Adjacent)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color medium-priority"></div>
+                    <span>Medium Priority (Diagonal)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color low-priority"></div>
+                    <span>Low Priority (Parity)</span>
+                </div>
+                <div class="legend-item">
+                    <div class="legend-color empty-cell"></div>
+                    <span>Empty</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-rules">
+            <h3>📋 Proximity AI Strategy:</h3>
+            <ol>
+                <li><strong>Recent Hits Tracking:</strong> Bot nhớ 5 ô vừa bắn trúng gần nhất</li>
+                <li><strong>Adjacent Priority:</strong> Ưu tiên bắn các ô kế bên (trên, dưới, trái, phải)</li>
+                <li><strong>Diagonal Priority:</strong> Ưu tiên thứ 2 cho các ô chéo</li>
+                <li><strong>Distance Calculation:</strong> Bot tính toán khoảng cách để ưu tiên</li>
+                <li><strong>Smart Fallback:</strong> Nếu không có proximity targets, dùng parity/random</li>
+            </ol>
+        </div>
+        
+        <div class="game-rules">
+            <h3>🎯 AI Priority System:</h3>
+            <ul>
+                <li><strong>Priority 1:</strong> Hunting Mode (đang săn tàu cụ thể)</li>
+                <li><strong>Priority 2:</strong> Proximity Targeting (gần các ô vừa trúng)</li>
+                <li><strong>Priority 3:</strong> Parity Targeting (pattern checkerboard)</li>
+                <li><strong>Priority 4:</strong> Random Targeting (fallback)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function showProximityDemo() {
+            const grid = document.getElementById('priorityGrid');
+            grid.innerHTML = '';
+            
+            // Create 10x10 grid
+            for (let r = 0; r < 10; r++) {
+                for (let c = 0; c < 10; c++) {
+                    const cell = document.createElement('div');
+                    cell.className = 'priority-cell';
+                    cell.textContent = `${r},${c}`;
+                    
+                    // Simulate recent hits at (4,4) and (4,5)
+                    if ((r === 4 && c === 4) || (r === 4 && c === 5)) {
+                        cell.classList.add('hit-cell');
+                        cell.textContent = 'HIT';
+                    }
+                    // High priority adjacent cells
+                    else if (
+                        (r === 3 && c === 4) || (r === 5 && c === 4) || 
+                        (r === 4 && c === 3) || (r === 4 && c === 6) ||
+                        (r === 3 && c === 5) || (r === 5 && c === 5) ||
+                        (r === 4 && c === 2) || (r === 4 && c === 7)
+                    ) {
+                        cell.classList.add('high-priority');
+                        cell.textContent = 'H';
+                    }
+                    // Medium priority diagonal cells
+                    else if (
+                        (r === 3 && c === 3) || (r === 3 && c === 6) ||
+                        (r === 5 && c === 3) || (r === 5 && c === 6)
+                    ) {
+                        cell.classList.add('medium-priority');
+                        cell.textContent = 'M';
+                    }
+                    // Low priority parity cells
+                    else if ((r + c) % 2 === 0) {
+                        cell.classList.add('low-priority');
+                        cell.textContent = 'L';
+                    }
+                    else {
+                        cell.classList.add('empty-cell');
+                        cell.textContent = '';
+                    }
+                    
+                    grid.appendChild(cell);
+                }
+            }
+            
+            document.getElementById('proximityDemo').style.display = 'block';
+        }
+        
+        async function startNewGame() {
+            try {
+                const response = await fetch('/newgame?mode=bot');
+                if (response.ok) {
+                    window.location.href = '/';
+                } else {
+                    alert('Error starting new game');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error starting new game');
+            }
+        }
+        
+        async function simulateBotTurn() {
+            try {
+                const response = await fetch('/Home/Fire', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        row: -1, // Signal for bot turn
+                        col: -1
+                    })
+                });
+                
+                const result = await response.json();
+                console.log('Bot turn result:', result);
+                
+                if (result.botShot) {
+                    alert(`Bot shot at (${result.botRow}, ${result.botCol}) - ${result.hit ? 'HIT!' : 'MISS'}`);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error simulating bot turn');
+            }
+        }
+        
+        // Initialize on page load
+        console.log('Proximity AI Test Page Loaded');
+        console.log('Click "Show Proximity Demo" to see how proximity targeting works');
+    </script>
+</body>
+</html>

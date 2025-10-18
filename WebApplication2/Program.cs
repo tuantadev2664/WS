@@ -70,7 +70,8 @@ namespace WebApplication2
                     ShotsTakenA = 0,
                     ShotsTakenB = 0,
                     IsGameOver = false,
-                    Winner = string.Empty
+                    Winner = string.Empty,
+                    BotAI = new BotAIState() // Initialize bot AI
                 };
 
 

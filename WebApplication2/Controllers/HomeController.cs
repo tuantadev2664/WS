@@ -419,8 +419,8 @@ namespace WebApplication2.Controllers
                 var human = gameState.A;
                 var rng = new Random();
                 
-                // Bot picks a shot
-                var (botRow, botCol) = GameLogic.BotPickShot(bot.OppView, rng);
+                // Bot picks a shot using AI
+                var (botRow, botCol) = GameLogic.BotPickShotAI(bot.OppView, gameState.BotAI, rng);
                 
                 if (botRow == -1 || botCol == -1)
                 {
@@ -437,6 +437,9 @@ namespace WebApplication2.Controllers
                 {
                     gameState.ShotsTakenB++;
                     _logger.LogInformation($"Bot shot result: hit={botHit}");
+                    
+                    // Update bot AI state based on shot result
+                    GameLogic.UpdateBotAI(gameState.BotAI, bot.OppView, botRow, botCol, botHit);
                 }
                 
                 // Check for game over after bot shot

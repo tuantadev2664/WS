@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Bot AI - Mini Battleship</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+    <style>
+        .ai-info {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            font-family: monospace;
+        }
+        .ai-state {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin: 10px 0;
+        }
+        .ai-state-item {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .hunt-targets {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin: 10px 0;
+        }
+        .hunt-target {
+            background: #ff6b6b;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        .parity-target {
+            background: #4ecdc4;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <h1>🤖 Test Bot AI Intelligence</h1>
+        
+        <div class="ai-info">
+            <h3>🧠 Bot AI Features:</h3>
+            <ul>
+                <li><strong>🎯 Parity Targeting:</strong> Bot bắt đầu với pattern checkerboard để tối ưu hóa tìm tàu</li>
+                <li><strong>🔍 Hunting Mode:</strong> Khi bắn trúng, bot sẽ bắn các ô kế bên để dò tàu</li>
+                <li><strong>📐 Direction Detection:</strong> Bot phát hiện hướng tàu (ngang/dọc) và tiếp tục bắn theo hướng đó</li>
+                <li><strong>🔄 Smart Switching:</strong> Bot chuyển đổi giữa hunting và parity targeting thông minh</li>
+            </ul>
+        </div>
+        
+        <div class="game-actions">
+            <button class="btn btn-primary" onclick="startNewGame()">
+                🎮 Start New Game
+            </button>
+            <button class="btn btn-secondary" onclick="simulateBotTurn()">
+                🤖 Simulate Bot Turn
+            </button>
+            <button class="btn btn-info" onclick="showBotState()">
+                📊 Show Bot State
+            </button>
+        </div>
+        
+        <div id="botState" class="ai-info" style="display: none;">
+            <h3>🤖 Bot AI State:</h3>
+            <div class="ai-state">
+                <div class="ai-state-item">
+                    <strong>Hunting Mode:</strong> <span id="isHunting">-</span>
+                </div>
+                <div class="ai-state-item">
+                    <strong>Hunt Start:</strong> <span id="huntStart">-</span>
+                </div>
+                <div class="ai-state-item">
+                    <strong>Hunt Direction:</strong> <span id="huntDirection">-</span>
+                </div>
+                <div class="ai-state-item">
+                    <strong>Parity Mode:</strong> <span id="parityMode">-</span>
+                </div>
+            </div>
+            <div>
+                <strong>Hunt Targets:</strong>
+                <div id="huntTargets" class="hunt-targets"></div>
+            </div>
+            <div>
+                <strong>Parity Targets:</strong>
+                <div id="parityTargets" class="parity-targets"></div>
+            </div>
+        </div>
+        
+        <div class="game-rules">
+            <h3>📋 How Bot AI Works:</h3>
+            <ol>
+                <li><strong>Phase 1 - Parity Targeting:</strong> Bot bắn theo pattern checkerboard để tối ưu hóa tìm tàu</li>
+                <li><strong>Phase 2 - Hunting Mode:</strong> Khi bắn trúng, bot chuyển sang chế độ săn tàu</li>
+                <li><strong>Phase 3 - Direction Detection:</strong> Bot phát hiện hướng tàu và bắn theo hướng đó</li>
+                <li><strong>Phase 4 - Completion:</strong> Bot hoàn thành việc tiêu diệt tàu và quay lại parity mode</li>
+            </ol>
+        </div>
+        
+        <div class="game-rules">
+            <h3>🎯 Bot AI Strategy:</h3>
+            <ul>
+                <li><strong>Smart Targeting:</strong> Bot không bắn ngẫu nhiên mà có chiến lược rõ ràng</li>
+                <li><strong>Efficient Hunting:</strong> Khi tìm thấy tàu, bot bắn có hệ thống để tiêu diệt nhanh</li>
+                <li><strong>Pattern Recognition:</strong> Bot nhận biết hướng tàu và tiếp tục bắn theo hướng đó</li>
+                <li><strong>Adaptive Behavior:</strong> Bot thích ứng với tình huống và chuyển đổi chiến lược</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        let gameState = null;
+        
+        async function startNewGame() {
+            try {
+                const response = await fetch('/newgame?mode=bot');
+                if (response.ok) {
+                    window.location.href = '/';
+                } else {
+                    alert('Error starting new game');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error starting new game');
+            }
+        }
+        
+        async function simulateBotTurn() {
+            try {
+                const response = await fetch('/Home/Fire', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        row: -1, // Signal for bot turn
+                        col: -1
+                    })
+                });
+                
+                const result = await response.json();
+                console.log('Bot turn result:', result);
+                
+                if (result.botShot) {
+                    alert(`Bot shot at (${result.botRow}, ${result.botCol}) - ${result.hit ? 'HIT!' : 'MISS'}`);
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error simulating bot turn');
+            }
+        }
+        
+        async function showBotState() {
+            try {
+                const response = await fetch('/Home/GetGameState');
+                const data = await response.json();
+                
+                if (data.success) {
+                    gameState = data;
+                    displayBotState(data);
+                } else {
+                    alert('No game in session. Start a new game first.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error getting bot state');
+            }
+        }
+        
+        function displayBotState(data) {
+            const botStateDiv = document.getElementById('botState');
+            botStateDiv.style.display = 'block';
+            
+            // Display basic bot state (simulated since we don't have direct access to BotAI)
+            document.getElementById('isHunting').textContent = 'Unknown (Check Console)';
+            document.getElementById('huntStart').textContent = 'Unknown (Check Console)';
+            document.getElementById('huntDirection').textContent = 'Unknown (Check Console)';
+            document.getElementById('parityMode').textContent = 'Unknown (Check Console)';
+            
+            // Clear targets
+            document.getElementById('huntTargets').innerHTML = '';
+            document.getElementById('parityTargets').innerHTML = '';
+            
+            console.log('Game State:', data);
+            console.log('Bot AI State would be available in server-side code');
+        }
+        
+        // Initialize on page load
+        console.log('Bot AI Test Page Loaded');
+        console.log('Click "Start New Game" to begin, then "Simulate Bot Turn" to see AI in action');
+    </script>
+</body>
+</html>
