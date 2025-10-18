@@ -1,8 +1,30 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Mini Battleship";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="game-container">
+    <div class="game-header">
+        <h1 class="game-title">🚀 Mini Battleship</h1>
+        <p class="game-subtitle">Chiến đấu trên biển cả!</p>
+    </div>
+    
+    <div class="game-actions">
+        <a href="/new?mode=bot" class="btn btn-primary">
+            <span class="btn-icon">🤖</span>
+            Chơi vs Bot
+        </a>
+        <a href="/new?mode=hotseat" class="btn btn-secondary">
+            <span class="btn-icon">👥</span>
+            Chơi 2 người
+        </a>
+    </div>
+    
+    <div class="game-rules">
+        <h3>📋 Luật chơi:</h3>
+        <ul>
+            <li>Mỗi người chơi có 3 tàu chiến (2 tàu 2 ô, 1 tàu 3 ô)</li>
+            <li>Lần lượt bắn vào ô của đối thủ</li>
+            <li>Bắn trúng tàu đối thủ để thắng!</li>
+        </ul>
+    </div>
 </div>

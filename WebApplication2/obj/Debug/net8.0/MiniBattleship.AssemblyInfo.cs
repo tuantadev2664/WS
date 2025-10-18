@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniBattleship")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8b0102fdc4e05dbfa3ae6d4ed16305eb7ebe4d5d")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniBattleship")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniBattleship")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

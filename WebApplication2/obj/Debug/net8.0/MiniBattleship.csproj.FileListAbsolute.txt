@@ -32,3 +32,37 @@ C:\Users\Anh Tuan\source\repos\WebApplication2\WebApplication2\obj\Debug\net8.0\
 C:\Users\Anh Tuan\source\repos\WebApplication2\WebApplication2\obj\Debug\net8.0\MiniBattleship.pdb
 C:\Users\Anh Tuan\source\repos\WebApplication2\WebApplication2\obj\Debug\net8.0\MiniBattleship.genruntimeconfig.cache
 C:\Users\Anh Tuan\source\repos\WebApplication2\WebApplication2\obj\Debug\net8.0\ref\MiniBattleship.dll
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\appsettings.Development.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\appsettings.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\MiniBattleship.staticwebassets.runtime.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\MiniBattleship.staticwebassets.endpoints.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\MiniBattleship.exe
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\MiniBattleship.deps.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\MiniBattleship.runtimeconfig.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\MiniBattleship.dll
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\bin\Debug\net8.0\MiniBattleship.pdb
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.GeneratedMSBuildEditorConfig.editorconfig
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.AssemblyInfoInputs.cache
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.AssemblyInfo.cs
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.csproj.CoreCompileInputs.cache
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.MvcApplicationPartsAssemblyInfo.cache
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.RazorAssemblyInfo.cache
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.RazorAssemblyInfo.cs
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.sourcelink.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\scopedcss\bundle\MiniBattleship.styles.css
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\scopedcss\projectbundle\MiniBattleship.bundle.scp.css
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\staticwebassets.build.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\staticwebassets.build.json.cache
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\staticwebassets.development.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.dll
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\refint\MiniBattleship.dll
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.pdb
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\MiniBattleship.genruntimeconfig.cache
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\ref\MiniBattleship.dll
+D:\BAO\MAJOR\SE8\PRN232\WS\WebApplication2\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

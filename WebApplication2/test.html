@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Game</title>
+</head>
+<body>
+    <h1>Test Game</h1>
+    <button onclick="testFire()">Test Fire</button>
+    <button onclick="testGameState()">Test Game State</button>
+    <div id="result"></div>
+
+    <script>
+        async function testFire() {
+            try {
+                const response = await fetch('/Home/Fire', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ r: 0, c: 0 })
+                });
+                
+                const result = await response.json();
+                document.getElementById('result').innerHTML = JSON.stringify(result, null, 2);
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Error: ' + error.message;
+            }
+        }
+
+        async function testGameState() {
+            try {
+                const response = await fetch('/Home/GetGameState');
+                const result = await response.json();
+                document.getElementById('result').innerHTML = JSON.stringify(result, null, 2);
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Error: ' + error.message;
+            }
+        }
+    </script>
+</body>
+</html>
