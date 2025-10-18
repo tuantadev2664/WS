@@ -3,8 +3,52 @@
   "WorkspaceRootPath": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\services\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\services\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\services\\htmlrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\services\\htmlrenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\wwwroot\\images\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\wwwroot\\images\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\wwwroot\\js\\game.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -31,40 +75,12 @@
       "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\services\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\services\\gamelogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\board.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\utils\\sessionjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\utils\\sessionjson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\gamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\turn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\mode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\playerstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|solutionrelative:webapplication2\\models\\cell.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EDD29E2D-198A-44C2-9303-2CAFB3CA4030}|WebApplication2\\MiniBattleship.csproj|d:\\bao\\major\\se8\\prn232\\ws\\webapplication2\\minibattleship.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -78,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -98,67 +114,137 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T03:18:27.987Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T03:18:27.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "WebApplication2\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T03:18:25.959Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "WebApplication2\\Views\\_ViewStart.cshtml",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "WebApplication2\\Views\\_ViewStart.cshtml",
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\ErrorViewModel.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\ErrorViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T03:18:24.496Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T03:49:42.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GameLogic.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\GameLogic.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Services\\GameLogic.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\GameLogic.cs",
+              "RelativeToolTip": "WebApplication2\\Services\\GameLogic.cs",
+              "ViewState": "AgIAAMwAAAAAAAAAAAAwwNwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:20:31.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Board.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Board.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Board.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Board.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Board.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:19:11.407Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cell.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Cell.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Cell.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Cell.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Cell.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:18:58.876Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "WebApplication2\\Views\\_ViewImports.cshtml",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "WebApplication2\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-18T03:18:23.824Z"
+              "Title": "GameState.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\GameState.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\GameState.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\GameState.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\GameState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:19:37.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Mode.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Mode.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Mode.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Mode.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Mode.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:19:50.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerState.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\PlayerState.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\PlayerState.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\PlayerState.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\PlayerState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:19:24.957Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Turn.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Turn.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Models\\Turn.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Turn.cs",
+              "RelativeToolTip": "WebApplication2\\Models\\Turn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:20:05.452Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HtmlRenderer.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\HtmlRenderer.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Services\\HtmlRenderer.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\HtmlRenderer.cs",
+              "RelativeToolTip": "WebApplication2\\Services\\HtmlRenderer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wIcAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T02:20:44.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "WebApplication2\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "WebApplication2\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAKwBAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T03:49:54.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "WebApplication2\\Views\\Home\\Index.cshtml",
@@ -170,32 +256,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HtmlRenderer.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\HtmlRenderer.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Services\\HtmlRenderer.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\HtmlRenderer.cs",
-              "RelativeToolTip": "WebApplication2\\Services\\HtmlRenderer.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAwwHYAAABKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:20:44.276Z",
+              "DocumentIndex": 11,
+              "Title": "game.js",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\wwwroot\\js\\game.js",
+              "RelativeDocumentMoniker": "WebApplication2\\wwwroot\\js\\game.js",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\wwwroot\\js\\game.js",
+              "RelativeToolTip": "WebApplication2\\wwwroot\\js\\game.js",
+              "ViewState": "AgIAANUCAAAAAAAAAADwv+ICAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-10-18T03:50:05.955Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Board.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Board.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Board.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Board.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Board.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:19:11.407Z"
+              "DocumentIndex": 10,
+              "Title": "README.md",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\wwwroot\\images\\README.md",
+              "RelativeDocumentMoniker": "WebApplication2\\wwwroot\\images\\README.md",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\wwwroot\\images\\README.md",
+              "RelativeToolTip": "WebApplication2\\wwwroot\\images\\README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-10-18T03:58:30.31Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T03:18:23.824Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T03:18:24.496Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T03:18:25.959Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T03:18:27.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebApplication2\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T03:18:27.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Program.cs",
@@ -207,19 +354,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GameLogic.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\GameLogic.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Services\\GameLogic.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Services\\GameLogic.cs",
-              "RelativeToolTip": "WebApplication2\\Services\\GameLogic.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAgwGEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:20:31.751Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "SessionJson.cs",
               "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Utils\\SessionJson.cs",
               "RelativeDocumentMoniker": "WebApplication2\\Utils\\SessionJson.cs",
@@ -231,67 +366,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GameState.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\GameState.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\GameState.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\GameState.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\GameState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:19:37.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Turn.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Turn.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Turn.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Turn.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Turn.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:20:05.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Mode.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Mode.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Mode.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Mode.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Mode.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:19:50.358Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PlayerState.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\PlayerState.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\PlayerState.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\PlayerState.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\PlayerState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:19:24.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Cell.cs",
-              "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Cell.cs",
-              "RelativeDocumentMoniker": "WebApplication2\\Models\\Cell.cs",
-              "ToolTip": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\Models\\Cell.cs",
-              "RelativeToolTip": "WebApplication2\\Models\\Cell.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-18T02:18:58.876Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "MiniBattleship.csproj",
               "DocumentMoniker": "D:\\BAO\\MAJOR\\SE8\\PRN232\\WS\\WebApplication2\\MiniBattleship.csproj",
               "RelativeDocumentMoniker": "WebApplication2\\MiniBattleship.csproj",

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Sound Effects - Mini Battleship</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="game-container">
+        <h1>Test Sound Effects</h1>
+        
+        <div class="game-actions">
+            <button class="btn btn-primary" onclick="testSound('fire')">
+                🔫 Test Fire Sound
+            </button>
+            <button class="btn btn-primary" onclick="testSound('hit')">
+                💥 Test Hit Sound
+            </button>
+            <button class="btn btn-primary" onclick="testSound('miss')">
+                🌊 Test Miss Sound
+            </button>
+            <button class="btn btn-primary" onclick="testSound('win')">
+                🎉 Test Win Sound
+            </button>
+        </div>
+        
+        <div class="game-rules">
+            <h3>📋 Sound Test Instructions:</h3>
+            <ul>
+                <li>Click các button để test âm thanh</li>
+                <li>Nếu có file âm thanh trong /sounds/, sẽ phát file đó</li>
+                <li>Nếu không có file, sẽ dùng Web Audio API</li>
+                <li>Volume được set ở 70%</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Sound effects with real audio files
+        const playSound = (soundType) => {
+            // Try to play real audio files first
+            const audioFile = getAudioFile(soundType);
+            if (audioFile) {
+                playAudioFile(audioFile);
+                return;
+            }
+            
+            // Fallback to Web Audio API if no audio files
+            playWebAudioSound(soundType);
+        };
+
+        const getAudioFile = (soundType) => {
+            const audioFiles = {
+                'hit': ['/sounds/hit.mp3', '/sounds/hit.wav', '/sounds/hit.ogg'],
+                'miss': ['/sounds/miss.mp3', '/sounds/miss.wav', '/sounds/miss.ogg'],
+                'win': ['/sounds/win.mp3', '/sounds/win.wav', '/sounds/win.ogg'],
+                'fire': ['/sounds/fire.mp3', '/sounds/fire.wav', '/sounds/fire.ogg']
+            };
+            
+            return audioFiles[soundType] || null;
+        };
+
+        const playAudioFile = (audioFiles) => {
+            let audio = null;
+            
+            // Try each audio format until one works
+            for (let i = 0; i < audioFiles.length; i++) {
+                try {
+                    audio = new Audio(audioFiles[i]);
+                    audio.volume = 0.7; // Set volume to 70%
+                    audio.play().catch(e => {
+                        console.log(`Could not play ${audioFiles[i]}:`, e);
+                        audio = null;
+                    });
+                    if (audio) break;
+                } catch (e) {
+                    console.log(`Error loading ${audioFiles[i]}:`, e);
+                }
+            }
+            
+            // If no audio file worked, fall back to Web Audio
+            if (!audio) {
+                console.log('No audio files found, using Web Audio fallback');
+            }
+        };
+
+        const playWebAudioSound = (soundType) => {
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            
+            switch(soundType) {
+                case 'hit':
+                    // Enhanced explosion sound
+                    const hitOscillator = audioContext.createOscillator();
+                    const hitGain = audioContext.createGain();
+                    hitOscillator.connect(hitGain);
+                    hitGain.connect(audioContext.destination);
+                    hitOscillator.frequency.setValueAtTime(200, audioContext.currentTime);
+                    hitOscillator.frequency.exponentialRampToValueAtTime(50, audioContext.currentTime + 0.4);
+                    hitGain.gain.setValueAtTime(0.4, audioContext.currentTime);
+                    hitGain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.4);
+                    hitOscillator.start(audioContext.currentTime);
+                    hitOscillator.stop(audioContext.currentTime + 0.4);
+                    break;
+                    
+                case 'miss':
+                    // Enhanced water splash sound
+                    const missOscillator = audioContext.createOscillator();
+                    const missGain = audioContext.createGain();
+                    missOscillator.connect(missGain);
+                    missGain.connect(audioContext.destination);
+                    missOscillator.frequency.setValueAtTime(1000, audioContext.currentTime);
+                    missOscillator.frequency.exponentialRampToValueAtTime(200, audioContext.currentTime + 0.3);
+                    missGain.gain.setValueAtTime(0.3, audioContext.currentTime);
+                    missGain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+                    missOscillator.start(audioContext.currentTime);
+                    missOscillator.stop(audioContext.currentTime + 0.3);
+                    break;
+                    
+                case 'win':
+                    // Enhanced victory fanfare
+                    const winOscillator1 = audioContext.createOscillator();
+                    const winOscillator2 = audioContext.createOscillator();
+                    const winGain = audioContext.createGain();
+                    winOscillator1.connect(winGain);
+                    winOscillator2.connect(winGain);
+                    winGain.connect(audioContext.destination);
+                    winOscillator1.frequency.setValueAtTime(523, audioContext.currentTime); // C5
+                    winOscillator2.frequency.setValueAtTime(659, audioContext.currentTime); // E5
+                    winOscillator1.frequency.setValueAtTime(659, audioContext.currentTime + 0.2); // E5
+                    winOscillator2.frequency.setValueAtTime(784, audioContext.currentTime + 0.2); // G5
+                    winOscillator1.frequency.setValueAtTime(784, audioContext.currentTime + 0.4); // G5
+                    winOscillator2.frequency.setValueAtTime(1047, audioContext.currentTime + 0.4); // C6
+                    winGain.gain.setValueAtTime(0.3, audioContext.currentTime);
+                    winGain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 1.0);
+                    winOscillator1.start(audioContext.currentTime);
+                    winOscillator2.start(audioContext.currentTime);
+                    winOscillator1.stop(audioContext.currentTime + 1.0);
+                    winOscillator2.stop(audioContext.currentTime + 1.0);
+                    break;
+                    
+                case 'fire':
+                    // Fire sound
+                    const fireOscillator = audioContext.createOscillator();
+                    const fireGain = audioContext.createGain();
+                    fireOscillator.connect(fireGain);
+                    fireGain.connect(audioContext.destination);
+                    fireOscillator.frequency.setValueAtTime(400, audioContext.currentTime);
+                    fireOscillator.frequency.exponentialRampToValueAtTime(200, audioContext.currentTime + 0.1);
+                    fireGain.gain.setValueAtTime(0.2, audioContext.currentTime);
+                    fireGain.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+                    fireOscillator.start(audioContext.currentTime);
+                    fireOscillator.stop(audioContext.currentTime + 0.1);
+                    break;
+            }
+        };
+
+        function testSound(soundType) {
+            console.log(`Testing ${soundType} sound...`);
+            playSound(soundType);
+        }
+    </script>
+</body>
+</html>

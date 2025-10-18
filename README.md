@@ -31,7 +31,7 @@ Một game Battleship đơn giản và đẹp mắt được xây dựng với A
 
 1. **Clone repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/tuantadev2664/WS.git
    cd MiniBattleship
    ```
 

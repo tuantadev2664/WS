@@ -1,5 +1,16 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\README.md
+wwwroot\images\ship-1-end-vertical.png
+wwwroot\images\ship-1-end.png
+wwwroot\images\ship-1-start-vertical.png
+wwwroot\images\ship-1-start.png
+wwwroot\images\ship-2-end-vertical.png
+wwwroot\images\ship-2-end.png
+wwwroot\images\ship-2-middle-vertical.png
+wwwroot\images\ship-2-middle.png
+wwwroot\images\ship-2-start-vertical.png
+wwwroot\images\ship-2-start.png
 wwwroot\js\game.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
@@ -59,3 +70,7 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\sounds\hit.mp3
+wwwroot\sounds\miss.mp3
+wwwroot\sounds\README.md
+wwwroot\sounds\win.mp3

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test Ship Images - Mini Battleship</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <div class="game-container">
+        <h1>Test Ship Images</h1>
+        
+        <div class="boards-container">
+            <div class="board-section">
+                <h3 class="board-title">Test Ship Classes</h3>
+                <table class="game-grid">
+                    <tr class="head">
+                        <td></td>
+                        <td>0</td>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                        <td>5</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td class="head">0</td>
+                        <td class="ship ship-1 horizontal ship-start"></td>
+                        <td class="ship ship-1 horizontal ship-end"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">1</td>
+                        <td></td>
+                        <td></td>
+                        <td class="ship ship-2 horizontal ship-start"></td>
+                        <td class="ship ship-2 horizontal ship-middle"></td>
+                        <td class="ship ship-2 horizontal ship-end"></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">2</td>
+                        <td class="ship ship-1 vertical ship-start"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">3</td>
+                        <td class="ship ship-1 vertical ship-end"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">3</td>
+                        <td class="ship"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="head">6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                
+                <div style="margin-top: 20px; padding: 15px; background: #f0f0f0; border-radius: 8px;">
+                    <h4>Legend:</h4>
+                    <ul>
+                        <li><span class="ship ship-1 horizontal ship-start" style="display: inline-block; width: 20px; height: 20px; margin-right: 5px;"></span> ship-start - Đầu tàu</li>
+                        <li><span class="ship ship-1 horizontal ship-end" style="display: inline-block; width: 20px; height: 20px; margin-right: 5px;"></span> ship-end - Đuôi tàu</li>
+                        <li><span class="ship ship-2 horizontal ship-middle" style="display: inline-block; width: 20px; height: 20px; margin-right: 5px;"></span> ship-middle - Thân tàu (chỉ tàu 3 ô)</li>
+                        <li><span class="ship ship-1 vertical ship-start" style="display: inline-block; width: 20px; height: 20px; margin-right: 5px;"></span> ship-start vertical - Đầu tàu dọc</li>
+                        <li><span class="ship ship-1 vertical ship-end" style="display: inline-block; width: 20px; height: 20px; margin-right: 5px;"></span> ship-end vertical - Đuôi tàu dọc</li>
+                        <li><span class="ship" style="display: inline-block; width: 20px; height: 20px; margin-right: 5px;"></span> ship (fallback) - shows 🚢 emoji</li>
+                    </ul>
+                    <p><strong>How it works:</strong></p>
+                    <ul>
+                        <li>✅ <strong>Mỗi ô hiển thị một phần tàu riêng biệt</strong></li>
+                        <li>✅ <strong>Tàu 2 ô</strong>: ship-start + ship-end</li>
+                        <li>✅ <strong>Tàu 3 ô</strong>: ship-start + ship-middle + ship-end</li>
+                        <li>✅ <strong>Tàu dọc</strong>: Sử dụng hình ảnh vertical riêng</li>
+                        <li>✅ <strong>Không bị che khuất</strong>: Mỗi ô hiển thị độc lập</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
